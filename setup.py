@@ -1,5 +1,10 @@
 from setuptools import setup
 
+# reading long description from file
+with open('DESCRIPTION.txt') as file:
+    long_description = file.read()
+
+
 # specify requirements of your package here
 REQUIREMENTS = ['requests']
 
@@ -21,8 +26,9 @@ CLASSIFIERS = [
 
 # calling the setup function 
 setup(name='mygmap',
-      version='1.0.0',
+      version='1.0.3',
       description='A small wrapper around google maps api',
+      long_description=long_description,
       url='https://github.com/nikhilkumarsingh/mygmap',
       author='Nikhil Kumar Singh',
       author_email='nikhilksingh97@gmail.com',
